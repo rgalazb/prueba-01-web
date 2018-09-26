@@ -1,16 +1,32 @@
 body {
   font-family: sans-serif;
+   background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  overflow-x: hidden;
+}
+.button{
+  background-color: #48c6ff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.d-inline-block{
+  display: inline-block;
 }
 /* css gilla */
 
-.item1 { 
+/*.item1 { 
   grid-area: nav; 
 }
 .item2 { 
   grid-area: side; 
+
 }
 .item3 { 
-  grid-area: main; 
+  grid-area: main;
+  
 }
 .item4 { 
   grid-area: footer; 
@@ -20,19 +36,14 @@ body {
   display: grid;
   grid-template-areas:
     'nav nav nav nav nav nav'
-    'side side main main main main'
-    'footer footer footer footer footer footer';
-}
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
+    'side main main main main main'
+    'side footer footer footer footer footer';
+}*/
+
 /* fin css grilla */
 /* css nav */
 
-ul {
+.nav{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -60,31 +71,103 @@ li a:hover {
 
 /*fin de navbar*/
 
-/*inicio de desplegable*/
 
+/*main   */
+.info-text{
+  font-size: .8rem;
+  padding: 1%;
+  text-align: left;
+  width: 45%;
+  display: inline-block;
+}
+
+/*fin main*/
+
+/*inicio de desplegable*/
+.side{
+  padding: 10px;
+  display: inline-block;
+  position: absolute;
+  left: 5%;
+  top: 20rem;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.6);
+  
+}
 .dropdown {
   position: relative;
   display: inline-block;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #48c6ff;
-  color: white;
+  
+  
+  
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: rgba(255,255,255,0.8);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
+  padding: 10px;
   z-index: 1;
-  width: 500px;
+  width: 400px;
   text-align: left;
+  top: 2rem;
+}
+.dropdown-content > ul > a{
+  text-decoration: none !important;
+  color: #474747 !important;
+  font-size: 1.5rem;
+}
+.dropdown-content > ul > a > li{
+  margin-bottom: 5px;
+  padding: 10px;
+  padding-left: 0 !important;
+
+}
+
+.dropdown-content > ul > a > li:hover{
+  padding-left: 10px;
+  border-left: 3px solid #48c6ff;
+
+}
+.dropdown-content > ul{
+  list-style: none !important;
+  margin: 0 !important;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: inline-block;
+}
+
+/*footer*/
+
+.item4{
+  
+ text-align: right !important;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+
+  height: 50px;
+ 
+}
+
+/*news grid */
+
+.news-box{
+  width: 500px;
+  border-bottom: 1px dashed #c8c8c8;
+  padding: 5px;
+}
+.news-img{
+  width: 30% !important;
+}
+.news-img > figure > img{
+  width: 100px !important;
+}
+.info-news{
+  width: 60% !important;
 }
 
 
