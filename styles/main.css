@@ -69,11 +69,15 @@ input[type=email] {
   margin: 8px 0;
   box-sizing: border-box;
 }
-.formulario {
+#formulario {
   margin-top: 170px;
   padding-left: 10%;
   padding-right: 50%;
   
+}
+
+#hide {
+  display: none;
 }
 /*fin css formulario*/
 /* css nav */
@@ -177,16 +181,7 @@ input[type=email] {
 
 /*footer*/
 
-.item4{
-  
- text-align: right !important;
-  color: white;
-  padding: 10px;
-  font-size: 30px;
 
-  height: 50px;
- 
-}
 
 /*news grid */
 

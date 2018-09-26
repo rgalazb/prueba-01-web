@@ -16,7 +16,10 @@
     <li><a href="nosotros.html">Nosotros</a></li> 
   </ul>
   
-  <div class="formulario">
+  <div id="formulario">
+    <div class="header">
+      Contanos ahora!
+    </div>
     <form>
       <label for="nombre">Nombre</label>
       <input type="text" name="nombre">
@@ -28,10 +31,17 @@
       <input type="email" name="email">
       <input type="radio" name="opcion" value="cliente">Quiero encontrar un hotel para mi perro!<br>
       <input type="radio" name="opcion" value="p">Quiero recibir perros en mi domicilio!<br>
-      <input type="submit" value="Envíar" class="button w-100">
+      <input type="submit" value="Envíar" id="submit-btn" class="button w-100">
     </form>
-  </div>
+    <div id="mensaje">
 
+    </div>
+  </div>
+  <script>
+    document.getElementById("submit-btn").onclick = () => {
+      document.getElementById("formulario").innerHTML = "<div class='header'> Datos ingresados correctamente. Lo contactaremos</div>";
+    };
+  </script>
 </body>
 </html>
 
