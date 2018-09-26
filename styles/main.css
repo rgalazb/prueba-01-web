@@ -13,6 +13,8 @@ body {
   border-radius: 5px;
 }
 
+
+
 .text-center{
   text-align: center !important;
 }
@@ -105,7 +107,11 @@ input[type=email] {
 
 
 /*fin de navbar*/
+/* nosotros */ 
 
+.nosotros{
+  padding: 10px;
+}
 
 /*main   */
 .info-text{
