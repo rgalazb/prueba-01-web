@@ -4,6 +4,7 @@ body {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   overflow-x: hidden;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .button{
   background-color: #48c6ff;
