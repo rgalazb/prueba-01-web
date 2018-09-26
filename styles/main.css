@@ -12,8 +12,20 @@ body {
   border-radius: 5px;
 }
 
+.m-0{
+  margin: 0px !important;
+}
+
+.p-0{
+  padding: 0 !important;
+}
+
+.l-style-none{
+  list-style: none !important;
+}
+
 .d-inline-block{
-  display: inline-block;
+  display: inline-block !important;
 }
 /* css gilla */
 
@@ -156,7 +168,7 @@ li a:hover {
 /*news grid */
 
 .news-box{
-  width: 500px;
+  width: 600px;
   border-bottom: 1px dashed #c8c8c8;
   padding: 5px;
 }
@@ -164,7 +176,7 @@ li a:hover {
   width: 30% !important;
 }
 .news-img > figure > img{
-  width: 100px !important;
+  width: 100% !important;
 }
 .info-news{
   width: 60% !important;
