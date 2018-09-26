@@ -1,5 +1,9 @@
 body {
   font-family: sans-serif;
+   background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  overflow-x: hidden;
 }
 .button{
   background-color: #48c6ff;
@@ -9,7 +13,7 @@ body {
 }
 /* css gilla */
 
-.item1 { 
+/*.item1 { 
   grid-area: nav; 
 }
 .item2 { 
@@ -18,7 +22,7 @@ body {
 }
 .item3 { 
   grid-area: main;
-  ; 
+  
 }
 .item4 { 
   grid-area: footer; 
@@ -28,15 +32,10 @@ body {
   display: grid;
   grid-template-areas:
     'nav nav nav nav nav nav'
-    'side side side side side main'
-    'footer footer footer footer footer footer';
-}
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
+    'side main main main main main'
+    'side footer footer footer footer footer';
+}*/
+
 /* fin css grilla */
 /* css nav */
 
@@ -74,12 +73,22 @@ li a:hover {
   font-size: .8rem;
   padding: 1%;
   text-align: left;
+  width: 45%;
+  display: inline-block;
 }
 
 /*fin main*/
 
 /*inicio de desplegable*/
-
+.side{
+  padding: 10px;
+  display: inline-block;
+  position: absolute;
+  left: 5%;
+  top: 20rem;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.6);
+}
 .dropdown {
   position: relative;
   display: inline-block;
@@ -91,12 +100,12 @@ li a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: rgba(255,255,255,0.8);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
   z-index: 1;
-  width: 500px;
+  width: 400px;
   text-align: left;
 }
 .dropdown-content > ul > a{
@@ -107,6 +116,7 @@ li a:hover {
 .dropdown-content > ul > a > li{
   margin-bottom: 5px;
   padding: 10px;
+  padding-left: 0 !important;
 
 }
 
@@ -117,10 +127,22 @@ li a:hover {
 }
 .dropdown-content > ul{
   list-style: none !important;
+  margin: 0 !important;
 }
 
 .dropdown:hover .dropdown-content {
   display: inline-block;
+}
+
+/*footer*/
+
+.item4{
+  position: absolute;
+  bottom: 10px !important;
+  background-color: #48c6ff;
+  
+  height: 50px;
+  color: #f8f8f8;
 }
 
 
