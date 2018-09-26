@@ -12,6 +12,13 @@ body {
   border-radius: 5px;
 }
 
+.col-md-3{
+  width: 30%;
+}
+.col-md-6{
+  width: 60%;
+}
+
 .w-100{
   width: 100%;
 }
@@ -66,11 +73,11 @@ input[type=text] {
   background-color: #333;
 }
 
-li {
+.nav > li {
   float: left;
 }
 
-li a {
+.nav > li > a {
   display: block;
   color: white;
   text-align: center;
@@ -79,7 +86,7 @@ li a {
 }
 
 
-li a:hover {
+.nav > li > a:hover {
   background-color: #111;
 }
 
@@ -173,7 +180,6 @@ li a:hover {
 
 .news-container{
   background-color: rgba(255,255,255,0.8);
-  height: 100px;
   width: 50%;
 }
 
