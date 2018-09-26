@@ -15,32 +15,20 @@ body {
 .d-inline-block{
   display: inline-block;
 }
-/* css gilla */
-
-/*.item1 { 
-  grid-area: nav; 
+/*css formulario*/
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
-.item2 { 
-  grid-area: side; 
-
-}
-.item3 { 
-  grid-area: main;
+.formulario {
+  margin-top: 170px;
+  padding-left: 10%;
+  padding-right: 50%;
   
 }
-.item4 { 
-  grid-area: footer; 
-}
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'nav nav nav nav nav nav'
-    'side main main main main main'
-    'side footer footer footer footer footer';
-}*/
-
-/* fin css grilla */
+/*fin css formulario*/
 /* css nav */
 
 .nav{
