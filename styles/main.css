@@ -1,3 +1,9 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+
 body {
   font-family: sans-serif;
    background-position: top; /* Center the image */
@@ -166,8 +172,8 @@ input[type=email] {
 }
 .dropdown-content > ul > a > li{
   margin-bottom: 5px;
-  padding: 10px;
-  padding-left: 0 !important;
+  padding: 5px;
+  padding-left: 5px !important;
 
 }
 
@@ -185,7 +191,7 @@ input[type=email] {
   display: inline-block;
 }
 
-/*footer*/
+
 
 
 
@@ -206,12 +212,15 @@ input[type=email] {
 /*footer */
 
 footer{
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  background-color: #272727;
-  color: white;
-  height: 50px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: ;
+    color: #151515;
+    padding:1%;
+    left: 0;
+    
+    
 }
 
 
