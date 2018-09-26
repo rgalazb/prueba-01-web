@@ -16,6 +16,10 @@ body {
   text-align: center !important;
 }
 
+.text-just{
+  text-align: justify !important;
+}
+
 .col-md-3{
   width: 30% !important;
 }
@@ -194,6 +198,17 @@ input[type=text] {
 .news-container > ul > li{
   border-bottom: 1px solid #c8c8c8;
   padding: 1%;
+}
+
+/*footer */
+
+footer{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: #272727;
+  color: white;
+  height: 50px;
 }
 
 
