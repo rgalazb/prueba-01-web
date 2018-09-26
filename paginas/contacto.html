@@ -7,16 +7,26 @@
   <link rel="stylesheet" type="text/css" media="screen" href="../styles/main.css" />
   <title>Contacto</title>
 </head>
-<body>
-  <div class="grid-container">
-      <div class="item1">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li><a href="noticias.html">Noticias</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li> 
-        </ul>
-      </div>
+<body background="../img/bkg-web.jpg">
+
+  <ul class="nav">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="#">Contacto</a></li>
+    <li><a href="noticias.html">Noticias</a></li>
+    <li><a href="nosotros.html">Nosotros</a></li> 
+  </ul>
+  
+  <div class="formulario">
+    <form>
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre">
+      <label for="apellido">Apellido</label>
+      <input type="text" name="apellido">
+      <input type="radio" name="opcion" value="cliente">Quiero encontrar un hotel para mi perro!<br>
+      <input type="radio" name="opcion" value="p">Quiero recibir perros en mi domicilio!<br>
+      <input type="submit" value="Envíar" class="button w-100">
+    </form>
   </div>
+
 </body>
 </html>
