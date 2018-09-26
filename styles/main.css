@@ -4,6 +4,7 @@ body {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   overflow-x: hidden;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .button{
   background-color: #48c6ff;
@@ -61,7 +62,8 @@ body {
   display: inline-block !important;
 }
 /*css formulario*/
-input[type=text] {
+input[type=text], 
+input[type=email] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
