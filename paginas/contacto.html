@@ -20,15 +20,15 @@
     <div class="header">
       Contanos ahora!
     </div>
-    <form>
+    <form method="post" action="#" name="contacto">
       <label for="nombre">Nombre</label>
-      <input type="text" name="nombre">
+      <input type="text" name="nombre" id="input-nombre">
 
       <label for="apellido">Apellido</label>
-      <input type="text" name="apellido">
+      <input type="text" name="apellido" id="input-apellido">
 
       <label for="nombre">Email</label>
-      <input type="email" name="email">
+      <input type="email" name="email" id="input-email">
       <input type="radio" name="opcion" value="cliente">Quiero encontrar un hotel para mi perro!<br>
       <input type="radio" name="opcion" value="p">Quiero recibir perros en mi domicilio!<br>
       <input type="submit" value="Envíar" id="submit-btn" class="button w-100">
@@ -39,8 +39,23 @@
   </div>
   <script>
     document.getElementById("submit-btn").onclick = () => {
-      document.getElementById("formulario").innerHTML = "<div class='header'> Datos ingresados correctamente. Lo contactaremos</div>";
+      var nombre = document.getElementById("input-nombre").value;
+      var apellido = document.getElementById("input-apellido").value;
+      var email = document.getElementById("input-email").value;
+      if ( nombre != "" && apellido != "" && email != "" && validarRadio() ) {
+        document.getElementById("formulario").innerHTML = "<div class='header'> Datos ingresados correctamente. Lo contactaremos</div>";
+
+      }else {
+        alert("porfavor ingrese todos los datos del formulario")
+      }
     };
+
+    function validarRadio() {
+      var opciones = document.forms["contacto"]["opcion"]
+      for (var i = 0; i < opciones.length; i++) {
+        return opciones[i].checked ? true : false
+      }
+    }
   </script>
 </body>
 </html>
