@@ -11,6 +11,10 @@ body {
   padding: 10px;
   border-radius: 5px;
 }
+
+.d-inline-block{
+  display: inline-block;
+}
 /* css gilla */
 
 /*.item1 { 
@@ -88,6 +92,7 @@ li a:hover {
   top: 20rem;
   padding: 10px;
   background-color: rgba(255,255,255,0.6);
+  
 }
 .dropdown {
   position: relative;
@@ -103,10 +108,11 @@ li a:hover {
   background-color: rgba(255,255,255,0.8);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
+  padding: 10px;
   z-index: 1;
   width: 400px;
   text-align: left;
+  top: 2rem;
 }
 .dropdown-content > ul > a{
   text-decoration: none !important;
@@ -137,12 +143,31 @@ li a:hover {
 /*footer*/
 
 .item4{
-  position: absolute;
-  bottom: 10px !important;
-  background-color: #48c6ff;
   
+ text-align: right !important;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+
   height: 50px;
-  color: #f8f8f8;
+ 
+}
+
+/*news grid */
+
+.news-box{
+  width: 500px;
+  border-bottom: 1px dashed #c8c8c8;
+  padding: 5px;
+}
+.news-img{
+  width: 30% !important;
+}
+.news-img > figure > img{
+  width: 100px !important;
+}
+.info-news{
+  width: 60% !important;
 }
 
 
