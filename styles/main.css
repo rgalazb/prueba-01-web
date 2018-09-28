@@ -201,7 +201,7 @@ input[type=email] {
   margin-top: 50px;
 }
 
-.news-container > ul > li{
+.news-container {
   border-bottom: 1px solid #c8c8c8;
   padding: 1%;
 }
@@ -212,7 +212,7 @@ footer{
     position: absolute;
     bottom: 0px;
     width: 100%;
-    background-color: ;
+    
     color: #151515;
     padding:1%;
     left: 0;
