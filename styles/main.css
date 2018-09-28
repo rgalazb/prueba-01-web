@@ -216,8 +216,10 @@ footer{
     color: #151515;
     padding:1%;
     left: 0;
-    
-    
+}
+
+#footer-noticias {
+  position: relative !important;
 }
 
 
